@@ -12,7 +12,7 @@ try:
 except NameError:
     unicode = str
 
-def loadConfig(filename='font.json'):
+def loadConfig(filename):
     with open(filename) as f:
         return json.load(f)
         
